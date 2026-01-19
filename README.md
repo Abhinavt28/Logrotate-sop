@@ -126,5 +126,13 @@ sudo apt install logrotate -y
 
 ```
 
+---
+### Verify installation:
+---
+```
+
+logrotate --version
+
+```
 
 
