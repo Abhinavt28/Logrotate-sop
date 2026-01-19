@@ -150,12 +150,39 @@ Example configuration file:
 ### Rotation Frequency
 Log rotation can be configured as:
 
-### Rotation Frequency
 
 * **daily** – Rotate logs every day  
 * **weekly** – Rotate logs every week  
 * **monthly** – Rotate logs every month  
-* **size 100M** – Rotate logs when the file size reaches 100 MB  
+* **size 100M** – Rotate logs when the file size reaches 100 MB
+
+## Retention Policy
+
+Retention policy defines how many rotated logs to keep:
+
+```bash
+rotate 14
+```
+
+## Configuration
+
+Configuration involves:
+
+* Defining log file paths
+* Setting rotation frequency
+* Enabling compression
+* Specifying retention count
+* Adding post-rotate scripts if required
+
+
+ Maintenance
+
+Common maintenance commands:
+
+```bash
+logrotate -f /etc/logrotate.conf   # Force log rotation
+systemctl restart rsyslog          # Restart logging service
+```
 
 
 
