@@ -150,13 +150,13 @@ Example configuration file:
 ### Rotation Frequency
 Log rotation can be configured as:
 
-daily – Rotate logs every day
+### Rotation Frequency
 
-weekly – Rotate logs every week
+* **daily** – Rotate logs every day  
+* **weekly** – Rotate logs every week  
+* **monthly** – Rotate logs every month  
+* **size 100M** – Rotate logs when the file size reaches 100 MB  
 
-monthly – Rotate logs every month
-
-size 100M – Rotate when log reaches specific size
 
 
 
