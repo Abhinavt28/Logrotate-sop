@@ -123,3 +123,7 @@ Logrotate configuration files are located at:
 ```bash
 sudo apt update
 sudo apt install logrotate -y
+
+## Verify installation:
+
+
