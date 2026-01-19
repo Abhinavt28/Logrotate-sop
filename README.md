@@ -184,6 +184,65 @@ logrotate -f /etc/logrotate.conf   # Force log rotation
 systemctl restart rsyslog          # Restart logging service
 ```
 
+## Monitoring
+
+To monitor logrotate:
+
+### Check cron logs
+
+```bash
+cat /var/log/syslog | grep logrotate
+```
+
+### Manually test configuration
+
+```bash
+logrotate -d /etc/logrotate.conf
+```
+
+## Disaster Recovery
+
+* Backup logrotate configuration files
+* Maintain archived logs on external storage
+* Restore configuration files if failure occurs:
+  * `/etc/logrotate.conf`
+  * `/etc/logrotate.d/`
+
+---
+
+## High Availability
+
+* Use centralized logging solutions:
+  * ELK
+  * CloudWatch
+  * Splunk
+* Maintain consistent logrotate configurations across servers
+* Automate via configuration management tools:
+  * Ansible
+  * Puppet
+
+## Troubleshooting
+
+| Issue                | Cause             | Solution               |
+|---------------------|------------------|------------------------|
+| Logs not rotating   | Incorrect config | Validate config syntax |
+| Permission denied   | Wrong ownership  | Fix file permissions   |
+| Logs not compressed | gzip missing     | Install gzip           |
+
+
+## References
+
+| Link | Description |
+|------|------------|
+| https://linux.die.net/man/8/logrotate | Official logrotate documentation |
+| https://man7.org/linux/man-pages/man8/logrotate.8.html | Logrotate manual page |
+
+
+## Contact Information
+
+| Name  | Email Address      |
+|------|--------------------|
+| Abhinav Tiwari | abhinav.tiwari.snaatak@mygurukulam.co |
 
 
 
