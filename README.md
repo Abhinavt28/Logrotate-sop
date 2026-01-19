@@ -230,6 +230,14 @@ logrotate -d /etc/logrotate.conf
 | Logs not compressed | gzip missing     | Install gzip           |
 
 
+## Contact Information
+
+| Name  | Email Address      |
+|------|--------------------|
+| Abhinav Tiwari | abhinav.tiwari.snaatak@mygurukulam.co |
+
+
+
 ## References
 
 | Link | Description |
@@ -238,11 +246,6 @@ logrotate -d /etc/logrotate.conf
 | https://man7.org/linux/man-pages/man8/logrotate.8.html | Logrotate manual page |
 
 
-## Contact Information
-
-| Name  | Email Address      |
-|------|--------------------|
-| Abhinav Tiwari | abhinav.tiwari.snaatak@mygurukulam.co |
 
 
 
