@@ -126,13 +126,25 @@ sudo apt install logrotate -y
 
 ```
 
----
+
 ### Verify installation:
 ---
 ```
-
 logrotate --version
+```
+### Basic Logrotate Configuration
+Example configuration file:
 
 ```
+/var/log/nginx/*.log {
+    daily
+    rotate 7
+    compress
+    missingok
+    notifempty
+    create 0640 www-data adm
+}
+```
+
 
 
