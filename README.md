@@ -132,7 +132,8 @@ sudo apt install logrotate -y
 ```
 logrotate --version
 ```
-### Basic Logrotate Configuration
+## Basic Logrotate Configuration
+
 Example configuration file:
 
 ```
