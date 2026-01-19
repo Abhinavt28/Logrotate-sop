@@ -175,7 +175,7 @@ Configuration involves:
 * Adding post-rotate scripts if required
 
 
- Maintenance
+## Maintenance
 
 Common maintenance commands:
 
